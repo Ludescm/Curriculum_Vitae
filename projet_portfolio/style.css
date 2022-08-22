@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans&family=Rambla&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #283655 !important;
+    background-color: #F7faff !important;
+    font-family: 'Rambla', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Audiowide', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px #283655;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*HEADER*/
+.navbar{
+    background-color: #FAFAFA;
+    opacity: 0.9;
+    height: 42px;
+    transition: 0.7s;
+}
+
+.navbar-nav{
+    width: 80% !important;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header{
+    text-align: center;
+    height: 100vh;
+    background: url(./media/header.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+h1{
+    padding: 90px 0 10px 0;
+    font-family: 'Josefin', sans-serif;
+    font-size: 4.3em;
+    text-transform: uppercase;
+}
+
+#line{
+    height: 1px;
+    background-color: #b3aca7;
+    width: 25%;
+    margin: 0 auto;
+}
+
+h2{
+    padding: 20px 0 50px 0;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.presentation{
+    height: 240px;
+    margin-top: 20px;
+}
+
+.infos{
+    border: 1px solid #b3aca7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.photo{
+    border: 1px solid #b3aca7;
+    position: relative;
+}
+
+.photo img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    max-width: 90%;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #283655;
+}
+
+header .button{
+    margin-top: 45px;
+}
+
+header .button a{
+    padding: 20px 80px;
+    border: 1px solid #b3aca7;
+    width: 300px;
+}
+
+header .button:hover a{
+    background: #b3aca7;
+    color: #e2dedb;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/*Langages & frameworks*/
+
+#langages{
+    padding: 80px 80px 80px 80px;
+    margin: 20px 0 0 6%;
+    height: 620px;
+    width: 47%;
+    max-width: 640px;
+    background: linear-gradient(110deg,#efefbb 0%, #d4d3dd 80%);
+    clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 90%);
+}
+
+#langages .bar{
+    padding: 10px 0 4px 0;
+    letter-spacing: 0.1em;
+}
+
+
+
+/*FORMATION*/
+
+#formation{
+    position: relative;
+    top: -200px;
+    float: right;
+    margin-right: 5%;
+    padding: 80px 0 60px 50px;
+    width: 45%;
+    max-width: 660px;
+    background: linear-gradient(135deg,#d0dcff 0%, #4286f4 60%);
+    clip-path: polygon(0 0, 100% 9%, 100% 91%, 0 100%);
+}
+
+#autodidacte{
+    padding-top: 20px;
+}
+
+#fcc {
+    padding: 50px 0 0 9%;
+}
+
+#occ{
+    padding: 50px 0 0 18%;
+}
+
+#formation h4{
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    padding-bottom: 10px;
+    color: #283655;
+}
+
+.counter{
+    display: flex;
+    text-align: center;
+}
+
+.data{
+    border: 1px solid #d0dcff;
+    width: 170px;
+    padding: 5px 20px;
+    margin: 0 4%;
+    box-shadow: 0 0 8px #d0dcff;
+}
+
+.counter-value{
+    font-size: 2em;
+}
+
+.data-span{
+    font-size: 1.8em;
+}
+
+/*PARCOURS*/
+#parcours{
+    max-width: 800px;
+    margin: 640px auto 180px auto;
+    padding: 40px 30px 100px 30px;
+    background: url(./media/parcours.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: -1px -1px 8px #283655;
+}
+
+#parcours h3{
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+
+#parcours h4{
+    font-size: 1.6em;
+    color: #4286f4;
+    margin-left: 20px;
+}
+
+#parcours h6{
+    font-style: italic;
+    color: #7b7b63;
+    margin-left: 20px;
+}
+
+#parcours p{
+    line-height: 1.9em;
+}
+
+.timeline{
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #7b7b63, #4286f4);
+    border-image-slice: 1;
+    margin: 0;
+    padding: 40px;
+    position: relative;
+}
+
+.timeline:nth-child(1)::after{
+    content: '▲';
+    color: #4286f4;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-sizing: content-box !important;
+}
+
+.timeline:nth-child(1){
+    border-bottom: 3px solid;
+    border-top: none;
+    width: 80%;
+}
+
+.timeline:nth-child(2){
+    border-top: none;
+}
+
+.timeline:nth-child(odd){
+    border-right: 3px solid;
+    padding-left: 0;
+}
+
+.timeline:nth-child(even){
+    border-left: 3px solid;
+    padding-right: 0;
+}
